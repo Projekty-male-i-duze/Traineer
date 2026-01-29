@@ -1,4 +1,4 @@
-# Project Name
+# Traineer
 
 A web application built as a team project with a clear separation between frontend and backend.
 
