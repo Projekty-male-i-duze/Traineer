@@ -1,45 +1,11 @@
-import {
-  ClipboardList,
-  Dumbbell,
-  MessageCircle,
-  TrendingUp,
-  User,
-} from "lucide-react";
 import { NavItem } from "./NavItem";
+import { navItems } from "../../constants/navigation";
 
 type PropsNav = {
   variant: "mobile" | "desktop";
 };
 
 export function Navigation({ variant }: PropsNav) {
-  const navItems = [
-    {
-      label: "Trening",
-      to: "/Training",
-      icon: Dumbbell,
-    },
-    {
-      label: "Plan",
-      to: "/Plan",
-      icon: ClipboardList,
-    },
-    {
-      label: "Postępy",
-      to: "/Progress",
-      icon: TrendingUp,
-    },
-    {
-      label: "Czat",
-      to: "/Messages",
-      icon: MessageCircle,
-    },
-    {
-      label: "Profil",
-      to: "/Profile",
-      icon: User,
-    },
-  ];
-
   if (variant === "mobile") {
     return (
       <nav className="fixed right-0 bottom-0 left-0 z-50 m-1 rounded-2xl border border-white/20 bg-(--main-color) backdrop-blur">
