@@ -1,5 +1,6 @@
 import { NavItem } from "./NavItem";
 import { navItems } from "../../constants/navigation";
+import { BellDot, Settings } from "lucide-react";
 
 type PropsNav = {
   variant: "mobile" | "desktop";
@@ -20,17 +21,21 @@ export function Navigation({ variant }: PropsNav) {
     );
   } else if (variant === "desktop") {
     return (
-      <nav className="h-full rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur">
+      <nav className="flex flex-col h-full rounded-2xl border border-white/10 bg-white/5 p-3 backdrop-blur">
         <div className="py-6 text-center text-2xl transition-colors hover:text-(--hover-color)">
           <p>Traineer</p>
         </div>
-        <ul className="flex h-full flex-col gap-3 mt-6">
+        <ul className="mt-6 flex flex-col gap-3">
           {navItems.map(({ label, to, icon }) => (
             <li key={to}>
               <NavItem to={to} label={label} icon={icon} />
             </li>
           ))}
         </ul>
+        <div className="flex flex-col justify-end items-center mt-auto">
+          <BellDot className="cursor-pointer h-8 w-8 mb-10 transition-all hover:text-(--hover-color) hover:scale-115" />
+          <Settings className="cursor-pointer h-8 w-8 mb-10 transition-all hover:text-(--hover-color) hover:scale-115" />
+        </div>
       </nav>
     );
   }
