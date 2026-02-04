@@ -1,12 +1,12 @@
 import { AppTitle } from "./AppTitle";
-import { NotificationBtn } from "./NotificationBtn";
+import { MailBtn } from "./MailBtn";
 import { SearchInput } from "./SearchInput";
 import { UserMenu } from "./UserMenu";
 
 export function TopBar() {
   return (
     <div className="flex justify-around items-center">
-      <NotificationBtn />
+      <MailBtn />
       <AppTitle />
       <SearchInput />
       <UserMenu />
