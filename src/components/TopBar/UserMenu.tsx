@@ -1,6 +1,6 @@
 export function UserMenu() {
   return (
-    <div className="lg:order-4 lg:mx-4">
+    <div className="lg:order-4 lg:mx-4 cursor-pointer transition-all hover:scale-110">
       <img
         src="/dog.jpg"
         alt="Zdjęcie użytkownika"
