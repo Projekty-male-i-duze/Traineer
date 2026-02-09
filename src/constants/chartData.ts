@@ -14,7 +14,15 @@ type ChartDataTypes = {
 };
 
 export const lineChartData: ChartDataTypes = {
-  labels: ["15 kwi", "16 kwi", "17 kwi", "18 kwi", "19 kwi", "20 kwi", "Dzisiaj"],
+  labels: [
+    "15 kwi",
+    "16 kwi",
+    "17 kwi",
+    "18 kwi",
+    "19 kwi",
+    "20 kwi",
+    "Dzisiaj",
+  ],
   datasets: [
     {
       label: "Wynik",
