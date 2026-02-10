@@ -34,7 +34,7 @@ export function ProgressChart() {
         >
           {diff > 0 && "↑"} {diff < 0 && "↓"} {Math.abs(diff).toFixed(0)}%
         </div>
-        <span className="text-xs text-(--text-color) uppercase">
+        <span className="text-xs uppercase">
           {lineChartData.labels[index]} {index > 0 ? "vs wczoraj" : "(start)"}
         </span>
       </div>

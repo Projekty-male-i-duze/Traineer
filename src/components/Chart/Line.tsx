@@ -18,6 +18,7 @@ ChartJS.register(
   LineElement,
   Tooltip,
 );
+
 type LineGraphProps = {
   onPointHover: (index: number | null) => void;
 };
@@ -39,7 +40,7 @@ function LineGraphComponent({ onPointHover }: LineGraphProps) {
         enabled: true,
         backgroundColor: "#1F2937",
         titleColor: "#fff",
-        bodyColor: "#FCD34D",
+        bodyColor: "#fff",
         padding: 10,
         cornerRadius: 8,
         displayColors: false,
@@ -52,7 +53,7 @@ function LineGraphComponent({ onPointHover }: LineGraphProps) {
         grid: { display: false, drawOnChartArea: false },
         border: { display: false },
         ticks: {
-          color: "#9CA3AF",
+          color: "#fff",
           font: { size: 11 },
           maxRotation: 0,
           autoSkip: true,
