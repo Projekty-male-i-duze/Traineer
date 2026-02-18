@@ -1,4 +1,5 @@
 import { ProgressChart } from "../components/Chart/ProgressChart";
+import { PersonalRecords } from "../components/PersonalRecords/PersonalRecords";
 import { TrainingHome } from "../components/TrainingOverview/TrainingHome";
 
 export function Training() {
@@ -6,6 +7,7 @@ export function Training() {
     <>
       <TrainingHome />
       <ProgressChart />
+      <PersonalRecords />
     </>
   );
 }
