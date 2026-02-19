@@ -10,8 +10,8 @@ export function PersonalRecords() {
         {personalRecords.map((record) => {
           return (
             <div key={record.id} className="flex items-center justify-between">
-              <div className="flex grow items-center gap-2">
-                {record.icon === "dumbbell" ? <Dumbbell /> : <Timer />}
+              <div className="flex grow items-center gap-2 md:gap-3">
+                {record.icon === "dumbbell" ? <Dumbbell className="h-6 w-6 md:h-8 md:w-8" /> : <Timer className="h-6 w-6 md:h-8 md:w-8" />}
                 <div className="flex flex-col">
                   <span className="font-bold text-(--text-color)">
                     {record.title}
