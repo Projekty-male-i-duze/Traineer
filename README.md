@@ -23,21 +23,22 @@ Traineer/
 │   ├── src/
 │   ├── Dockerfile.dev
 │   └── package.json
+├── .env.example
 └── docker-compose.yml
 ```
 
 ## Run (DEV)
 
-1. Build and start containers:
+1. Create local env file:
+
+```bash
+cp .env.example .env
+```
+
+2. Build and start containers:
 
 ```bash
 docker compose up --build
-```
-
-2. Run Django migrations:
-
-```bash
-docker compose exec backend python manage.py migrate
 ```
 
 3. (Optional) Create an admin user:
@@ -50,6 +51,9 @@ docker compose exec backend python manage.py createsuperuser
 - Frontend: http://localhost:5173
 - Backend: http://localhost:8000
 - Admin Django: http://localhost:8000/admin
+- PostgreSQL: localhost:5432
+
+> `backend` runs `python manage.py migrate` automatically on container startup.
 
 ## Useful commands
 
