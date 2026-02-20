@@ -22,3 +22,35 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Global ignores (common for both backend and frontend)
+*.DS_Store
+*.idea/
+*.vscode/
+Thumbs.db
+backend/logs/
+.DS_Store
+.env
+backups/
+*.dump
+
+# Backend-specific ignores
+.venv/
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.sql
+staticfiles/
+# Certificates
+certs/
+*.pem
+# Celery
+celerybeat.pid
+celerybeat-schedule.*
+**/celerybeat-schedule*
+backend/celerybeat-schedule
+**/celerybeat.pid
+
+backend/db.sqlite3
+backend/.venv/
