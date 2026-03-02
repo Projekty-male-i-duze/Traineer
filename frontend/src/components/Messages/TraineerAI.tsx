@@ -21,7 +21,7 @@ export function TraineerAI() {
           placeholder="Napisz do Traineer AI..."
           className="flex-1 rounded-xl bg-white/5 p-3 text-white outline-none focus:bg-white/10"
         />
-        <button className="cursor-pointer rounded-xl bg-(--text-color) px-6 py-3 font-bold text-(--btn-text-color) transition-colors hover:bg-(--hover-color) hover:text-(--text-color)">
+        <button className="cursor-pointer rounded-xl bg-(--text-color) px-6 py-3 text-(--btn-text-color) transition-colors hover:bg-(--hover-color) hover:text-(--text-color)">
           Wyślij
         </button>
       </div>
