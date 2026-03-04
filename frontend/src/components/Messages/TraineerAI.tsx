@@ -2,7 +2,7 @@ import { MessagesList } from "./MessagesList";
 
 export function TraineerAI() {
   return (
-    <div className="mt-3 flex h-full w-full flex-col gap-4">
+    <div className="mt-3 flex h-[90%] w-full flex-col gap-4">
       <div className="p-6">
         <h2 className="text-center text-3xl font-bold">
           Traineer <span className="text-(--hover-color)">AI</span>
