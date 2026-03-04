@@ -1,4 +1,5 @@
 import { TrendingUp, Flame } from "lucide-react";
+import { SingleRow } from "./SingleRow";
 
 export function LifetimeStats() {
   return (
@@ -10,27 +11,15 @@ export function LifetimeStats() {
         </h2>
       </div>
       <div className="flex flex-col gap-6 rounded-4xl bg-(--glass-color)/50 p-8">
-        <div className="flex items-center justify-between">
-          <span className="font-medium text-(--text-color)">Treningi</span>
-          <span className="text-2xl font-bold text-(--text-color)">42</span>
-        </div>
-        <div className="flex items-center justify-between">
-          <span className="font-medium text-(--text-color)">Dni z rzędu</span>
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-(--hover-color)">12</span>
-            <Flame
-              className="text-(--hover-color)"
-              size={24}
-              fill="currentColor"
-            />
-          </div>
-        </div>
-        <div className="flex items-center justify-between">
-          <span className="font-medium text-(--text-color)">
-            Najlepszy tonaż
-          </span>
-          <span className="text-2xl font-bold text-(--text-color)">4.2t</span>
-        </div>
+        <SingleRow label="Treningi" sum={42} />
+        <SingleRow label="Dni z rzędu" sum={12} orange={true}>
+          <Flame
+            className="text-(--hover-color)"
+            size={24}
+            fill="currentColor"
+          />
+        </SingleRow>
+        <SingleRow label="Najlepszy tonaż" sum={4.2} unit="t" />
       </div>
     </div>
   );
