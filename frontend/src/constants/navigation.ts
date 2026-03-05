@@ -9,27 +9,27 @@ import {
 export const navItems = [
     {
       label: "Trening",
-      to: "/Training",
+      to: "/training",
       icon: Dumbbell,
     },
     {
       label: "Plan",
-      to: "/Plan",
+      to: "/plan",
       icon: ClipboardList,
     },
     {
       label: "Postępy",
-      to: "/Progress",
+      to: "/progress",
       icon: TrendingUp,
     },
     {
       label: "Czat",
-      to: "/Messages",
+      to: "/messages",
       icon: MessageCircle,
     },
     {
       label: "Profil",
-      to: "/Profile",
+      to: "/profile",
       icon: User,
     },
   ];

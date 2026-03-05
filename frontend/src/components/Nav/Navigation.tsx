@@ -1,6 +1,6 @@
 import { NavItem } from "./NavItem";
 import { navItems } from "../../constants/navigation";
-import { BellDot, Settings } from "lucide-react";
+import { BottomNavBtns } from "./BottomNavBtns";
 
 type PropsNav = {
   variant: "mobile" | "desktop";
@@ -32,10 +32,7 @@ export function Navigation({ variant }: PropsNav) {
             </li>
           ))}
         </ul>
-        <div className="flex flex-col justify-end items-center mt-auto">
-          <BellDot className="cursor-pointer h-8 w-8 mb-10 transition-all hover:text-(--hover-color) hover:scale-115" />
-          <Settings className="cursor-pointer h-8 w-8 mb-10 transition-all hover:text-(--hover-color) hover:scale-115" />
-        </div>
+          <BottomNavBtns />
       </nav>
     );
   }

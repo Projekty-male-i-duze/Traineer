@@ -8,6 +8,7 @@ import { Plan } from "./pages/Plan.tsx";
 import { Profile } from "./pages/Profile.tsx";
 import { Progress } from "./pages/Progress.tsx";
 import { MainLayout } from "./Layout/MainLayout.tsx";
+import { Settings } from "./pages/Settings.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/plan", element: <Plan /> },
       { path: "/profile", element: <Profile /> },
       { path: "/progress", element: <Progress /> },
+      { path: "/settings", element: <Settings /> },
     ],
   },
 ]);
